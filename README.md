@@ -16,4 +16,6 @@ It will have:
 
 # PROTOCOLS
 
-ONLY OPEN THE SERVER BETWEEN THE TCP PROTOCOL PORTS
+Only open the server with tcp protocol ports
+
+<img align="center" alt ="tcp" width=838 src="http://www.ortizonline.com/images/sockets.gif">
