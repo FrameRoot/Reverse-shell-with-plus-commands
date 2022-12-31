@@ -12,7 +12,7 @@ It has
 
 It will have:
 - Chat to communicate between the server and the client
-- flood of packets 
+- Flood of packets 
 
 
 ![Screenshot_4](https://user-images.githubusercontent.com/109004138/210141309-adea4cac-0e80-4f07-9a08-b22853a2b333.png)
