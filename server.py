@@ -1,3 +1,4 @@
+#SCRIPT on https://github.com/FrameRoot
 import socket 
 import pystyle 
 from pystyle import Colorate, Colors
