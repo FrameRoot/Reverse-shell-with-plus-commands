@@ -21,6 +21,7 @@ Only open the server with tcp protocol ports
 <img align="center" alt ="tcp" width=838 src="http://www.ortizonline.com/images/sockets.gif">
 
 Common TCP ports:
+
 21 = FTP: File Transfer Protocol 
 
 23 = Telnet: Telnet
