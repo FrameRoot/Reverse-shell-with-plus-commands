@@ -1,4 +1,3 @@
-#SCRIPT on https://github.com/FrameRoot
 import socket 
 import pystyle 
 from pystyle import Colorate, Colors
@@ -14,7 +13,7 @@ def main():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ctypes.windll.kernel32.SetConsoleTitleW(" Reverse shell server by frame ")
     print(Colors.green,f"""
-_____ _____ _____ _____ _____ ______
+ _____ _____ _____ _____ _____ _____
 |   __|   __| __  |  |  |   __| __  |
 |__   |   __|    -|  |  |   __|    -|
 |_____|_____|__|__|\___/|_____|__|__|
