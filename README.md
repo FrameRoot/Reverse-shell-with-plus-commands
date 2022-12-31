@@ -19,3 +19,20 @@ It will have:
 Only open the server with tcp protocol ports
 
 <img align="center" alt ="tcp" width=838 src="http://www.ortizonline.com/images/sockets.gif">
+
+Common TCP ports:
+21 = FTP: File Transfer Protocol 
+
+23 = Telnet: Telnet
+
+25 = SMTP: Simple Mail Transfer Protocol 
+
+53 = DNS: Domain Name System 
+
+80 = HTTP: Hyper Text Transfer Protocol 
+
+110 = POP3: Post Office Protocol version 3 
+
+119 = NNTP: Net News Transport Protocol 
+
+443 = SSL: Secure Sockets Layer
