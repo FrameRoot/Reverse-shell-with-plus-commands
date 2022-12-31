@@ -8,7 +8,7 @@ What is a revershe shell:
 It has 
 - Full acess to the machine (as every revershe shell connection)
 - RICKROLL
-- Automated commands to make your life easier (ipv4)
+- Automated commands to make your life easier
 
 It will have:
 - Chat to communicate between the server and the client
