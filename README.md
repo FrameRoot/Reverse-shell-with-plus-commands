@@ -16,7 +16,7 @@ It will have:
 
 
 ![Screenshot_4](https://user-images.githubusercontent.com/109004138/210141309-adea4cac-0e80-4f07-9a08-b22853a2b333.png)
-# PROTOCOLS
+# PROTOCOL
 
 Only open the server with tcp protocol ports
 
