@@ -73,6 +73,14 @@ _____ _____ _____ _____ _____ ______
             print(f" {Colors.white}[{Colors.green}+{Colors.white}] RICKROLLED")
             print("")
 
+        if command.lower() == "help":
+            print("""
+ COMMAND LIST
+ ------------------------
+ -> ipv4
+ -> rickroll
+ -> hacked""")
+            print("")
 
 
 main()# you dont readlly need to define this but i just like to do because of the compiled languages
