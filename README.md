@@ -1,4 +1,4 @@
-# Reverse-shell-with-special-commands
+# Reverse-shell-with-more-commands
 
 A reverse shell (non-exploit) that has special commands [Windows Version]
 
