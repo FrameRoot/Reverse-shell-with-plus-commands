@@ -19,7 +19,7 @@ It will have:
 
 **How to install:**
 
-```pip install -r requirements.txt```
+```pip install -r requirements.txt or pip3 install -r requirements.txt```
 
 ```python server.py or python3 server.py```
 
