@@ -1,2 +1,2 @@
 pystyle
-ctypes
+requests
