@@ -43,7 +43,10 @@ def main():
     while True:
         command = input(f"{Colors.green} Shell {Colors.white}> ")
         conn.send(command.encode())
+        if command.lower() == "":
+            continue
         if command.lower() == "kill":
+            print("")
             print(f' {Colors.white}[{Colors.red}-{Colors.white}] Server was killed')
             break
         #else:
