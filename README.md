@@ -11,7 +11,7 @@ It has
 - Automated commands to make your life easier
 
 It will have:
-- Chat to communicate between the server and the client
+- ~~Chat to communicate between the server and the client~~ (DONE)
 - Flood of packets 
 
 
