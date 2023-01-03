@@ -9,6 +9,7 @@ It has
 - Full acess to the machine (as every revershe shell connection)
 - RICKROLL
 - Automated commands to make your life easier
+- Chat to communicate between the server and the client
 
 It will have:
 - ~~Chat to communicate between the server and the client~~ (DONE)
