@@ -21,7 +21,7 @@ It will have:
 ![Screenshot_4](https://user-images.githubusercontent.com/109004138/210141309-adea4cac-0e80-4f07-9a08-b22853a2b333.png)
 
 # Errors
-- DATA OVERLOAD
+- DATA OVERLOAD\n
 The biggest error its the number of data , the command prompt cant afford a lot of data
 when you do a `dir`as an example and there is a lot of files it will divide the dir
 by ```enters``` so everytime you click enter it will give a % of the data of the ```dir```
