@@ -30,6 +30,7 @@ def main():
     time.sleep(0.1)
     #client_ip = conn.recv(1024).decode()
     print (f' {Colors.white}[{Colors.green}+{Colors.white}] Connection From: {Colors.green}', addr)
+    time.sleep(0.1)
     print(f' {Colors.white}[{Colors.green}+{Colors.white}] Starting session ...')
     time.sleep(2)
     print(f' {Colors.white}[{Colors.green}+{Colors.white}] Session Started!')
@@ -49,8 +50,18 @@ def main():
             #results = conn.recv(1024).decode()
             #print(results)
         if command == "message":
-            message = input("Message: ")
-            s.send(message.encode())
+            print("")
+            message = input(f" Message: {Colors.green}")
+            conn.send(message.encode())
+            print("")
+            print(f" {Colors.white}[{Colors.green}+{Colors.white}] Message sended")
+            #if conn.recv(1024):
+            #    print("done")
+            #    continue
+            #else:
+            #    continue         this should be a system of verification of the message from receveing requests but if i receive one requests i cant receive another one idk why
+
+
         if command.lower() == "hacked":
             print("")
             print(f" {Colors.white}[{Colors.green}+{Colors.white}] Warn sended!")
