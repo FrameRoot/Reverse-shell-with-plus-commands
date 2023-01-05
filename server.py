@@ -9,7 +9,7 @@ import ctypes
 times = 5000
 
 def main():
-    os.system('cls')
+    #os.system('cls') if you want to clean your console just retire the # and this text
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ctypes.windll.kernel32.SetConsoleTitleW(" Reverse shell server by frame ")
     print(Colors.green,f"""
