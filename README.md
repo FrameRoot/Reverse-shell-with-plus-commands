@@ -23,9 +23,9 @@ It will have:
 # Errors
 - DATA OVERLOAD
 
-The biggest error its the number of data , the command prompt cant afford a lot of data
+~~The biggest error its the number of data , the command prompt cant afford a lot of data
 when you do a `dir`as an example and there is a lot of files it will divide the dir
-by ```enters``` so everytime you click enter it will give a % of the data of the ```dir```
+by ```enters``` so everytime you click enter it will give a % of the data of the ```dir```~~ **SOLVED**
 - cd Command
 
 
