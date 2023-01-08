@@ -77,6 +77,21 @@ def main():
             print(results)
             print("------------------------------------------------------------------------")
 
+        if command.lower()=="clear":
+            os.system('cls')
+            print(Colors.green,f"""
+ _____ _____ _____ _____ _____ _____
+|   __|   __| __  |  |  |   __| __  |
+|__   |   __|    -|  |  |   __|    -|
+|_____|_____|__|__|\___/|_____|__|__|
+                            {Colors.white}Maded by frame 
+                            """)
+
+        if command.lower()=="local":
+            localip=conn.recv(1024)
+            print(f"{Colors.white} LOCAL IPV4: {Colors.green}",localip.decode())
+            print("")
+
         if command.lower() == "ipv4":
             final = conn.recv(1024).decode()
             print("")
