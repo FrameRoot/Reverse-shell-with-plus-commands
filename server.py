@@ -24,7 +24,7 @@ def main():
     s.bind((f"{ip}", port))
     s.listen(5)
     print("")
-    print (f' {Colors.white}{Colors.white}[{Colors.green}+{Colors.white}] Listening on port {port}')
+    print (f' {Colors.white}{Colors.white}[{Colors.green}*{Colors.white}] Listening on port {port}')
     
     conn, addr = s.accept() 
     time.sleep(0.1)
