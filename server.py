@@ -12,7 +12,7 @@ def main():
     os.system('cls')
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ctypes.windll.kernel32.SetConsoleTitleW(" Reverse shell server by frame ")
-    print(Colors.green,f"""
+    banner = print(Colors.green,f"""
  _____ _____ _____ _____ _____ _____
 |   __|   __| __  |  |  |   __| __  |
 |__   |   __|    -|  |  |   __|    -|
@@ -27,8 +27,20 @@ def main():
     print (f' {Colors.white}{Colors.white}[{Colors.green}*{Colors.white}] Listening on port {port}')
     
     conn, addr = s.accept() 
-    time.sleep(0.1)
+    os.system('cls')
+    print(Colors.green,f"""
+ _____ _____ _____ _____ _____ _____
+|   __|   __| __  |  |  |   __| __  |
+|__   |   __|    -|  |  |   __|    -|
+|_____|_____|__|__|\___/|_____|__|__|
+                            {Colors.white}Maded by frame 
+                            """)
+    print(Colors.white+" HOST IP (default: 127.0.0.1):"+Colors.green,ip)
+    print(Colors.white+" HOST PORT (default: 8080):"+Colors.green,port)
     #client_ip = conn.recv(1024).decode()
+    print("")
+    print (f' {Colors.white}{Colors.white}[{Colors.green}+{Colors.white}] Connected on port {port}')
+    time.sleep(0.1)
     print (f' {Colors.white}[{Colors.green}+{Colors.white}] Connection From: {Colors.green}{addr[0]}:{addr[1]}')
     time.sleep(0.1)
     print(f' {Colors.white}[{Colors.green}+{Colors.white}] Starting session ...')
