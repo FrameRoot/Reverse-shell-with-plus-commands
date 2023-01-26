@@ -9,7 +9,7 @@ import ctypes
 times = 5000
 
 def main():
-    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ctypes.windll.kernel32.SetConsoleTitleW(" Reverse shell server by frame ")
     banner = print(Colors.green,f"""
@@ -27,7 +27,7 @@ def main():
     print (f' {Colors.white}{Colors.white}[{Colors.green}*{Colors.white}] Listening on port {port}')
     
     conn, addr = s.accept() 
-    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
     print(Colors.green,f"""
  _____ _____ _____ _____ _____ _____
 |   __|   __| __  |  |  |   __| __  |
@@ -90,7 +90,7 @@ def main():
             print("------------------------------------------------------------------------")
 
         if command.lower()=="clear":
-            os.system('cls')
+            os.system('cls' if os.name == 'nt' else 'clear')
             print(Colors.green,f"""
  _____ _____ _____ _____ _____ _____
 |   __|   __| __  |  |  |   __| __  |
