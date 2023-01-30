@@ -4,7 +4,10 @@ from pystyle import Colorate, Colors , Write
 import os
 import random
 import time
+import datetime 
+from datetime import datetime 
 import ctypes
+Time = datetime.now().strftime("%H:%M:%S")
 
 times = 5000
 
@@ -45,7 +48,7 @@ def main():
     time.sleep(0.1)
     print(f' {Colors.white}[{Colors.green}+{Colors.white}] Starting session ...')
     time.sleep(2)
-    print(f' {Colors.white}[{Colors.green}+{Colors.white}] Session Started!')
+    print(f' {Colors.white}[{Colors.green}+{Colors.white}] Session Started! [{Colors.green}{Time}{Colors.white}]')
     time.sleep(0.1)
     print(f' {Colors.white}[{Colors.green}+{Colors.white}] Stabilizing command prompt ...')
     time.sleep(2)
